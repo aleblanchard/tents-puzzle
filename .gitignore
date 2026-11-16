@@ -1,0 +1,13 @@
+/build/
+/build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+
+
+*.o
+*.a
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

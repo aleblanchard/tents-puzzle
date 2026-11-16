@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Projet TENT</title>
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;        
+            background-color: #f0f0f0;
+        }
+
+
+        h1, h2 { color: #333; }
+
+
+        p { font-size: 12px;
+            color: #ffffff;
+            text-align: start; }
+
+
+        canvas {
+            border: 3px solid #333;
+            display: block;
+            margin: 20px auto;
+        }
+       
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: 1mm ridge #060606; ;
+            border-radius: 5px;
+        }
+       
+        .div1 {
+        max-width: 600px;
+        margin: 0 auto 20px auto;
+        background-color: #B3C99C;
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+
+        .div2   {
+        max-width: 550px;
+        margin: 0 auto 20px auto;
+        background-color: #4F7942;
+        padding: 20px;
+        border-radius: 50px;
+    }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="div1">
+    <h1>Game Tent</h1>
+    <h2>Equipe B-33</h2>
+
+
+    <div class="div2">
+    <p><strong>Règle 1)</strong> Il n'y a pas deux tentes adjacentes, même en diagonale.</p>
+    <p><strong>Règle 2)</strong> Le nombre de tentes dans chaque rangée et dans chaque colonne correspond aux nombres attendus indiqués sur les côtés de la grille.</p>
+    <p><strong>Règle 3)</strong> Il y a exactement autant de tentes que d'arbres.</p>
+    <p><strong>Règle 4)</strong> Chaque tente doit être adjacente orthogonalement (horizontalement ou verticalement, mais pas en diagonale) à au moins un arbre et vice versa.</p>
+    <p><strong>Click gauche:</strong> Place une TENTE ou <strong>Click droit:</strong> Place une HERBE </p>
+
+
+    <canvas id="theGame" width="400" height="400"></canvas>
+   
+   
+    <button id="btnRestart">Restart</button>
+    <button id="btnUndo">Undo</button>
+    <button id="btnRedo">Redo</button>
+    <button id="btnSolve">Solve</button>
+    <button id="btnRandom">Random</button>
+    </div>
+
+
+    </div>
+
+
+    <script src="game.js"></script>
+    <script src="game_web.js"></script>
+   
+</body>
+</html>
